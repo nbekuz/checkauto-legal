@@ -27,11 +27,12 @@ function isActive(path: string) {
     class="sticky top-0 z-50 border-b border-white/10 bg-night/95 text-white backdrop-blur-md"
   >
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-      <RouterLink to="/" class="flex items-center gap-3" @click="close">
-        <img src="/logo.svg" alt="" class="h-9 w-9 object-contain" />
-        <span class="font-display text-lg font-bold tracking-tight sm:text-xl">
-          {{ company.brand }}
-        </span>
+      <RouterLink to="/" class="flex items-center" @click="close">
+        <img
+          src="/logo.png"
+          :alt="company.brand"
+          class="h-10 w-auto object-contain sm:h-11"
+        />
       </RouterLink>
 
       <nav class="hidden items-center gap-1 md:flex" aria-label="Основная навигация">

@@ -18,9 +18,12 @@ const docs = [
     <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
       <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <RouterLink to="/" class="mb-4 inline-flex items-center gap-3">
-            <img src="/logo.svg" alt="" class="h-9 w-9 object-contain" />
-            <span class="font-display text-xl font-bold">{{ company.brand }}</span>
+          <RouterLink to="/" class="mb-4 inline-flex items-center">
+            <img
+              src="/logo.png"
+              :alt="company.brand"
+              class="h-12 w-auto object-contain"
+            />
           </RouterLink>
           <p class="max-w-md text-sm leading-relaxed text-white/70">
             Платформа выездного ремонта и обслуживания автомобилей. Связываем
